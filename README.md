@@ -10,26 +10,29 @@ Example data
 
 ```json
 {
-  "Id": "80822ada-ddf9-4f9c-8165-010e4695cba1",
+  "Id": "8308a949-911b-4bb8-be98-e6bed5899448",
+  "Path": "audi/q6_e-tron/sq6_e-tron.json",
   "Brand": {
     "Id": null,
     "Name": "Audi",
     "SubBrand": null
   },
   "ModelInfo": {
-    "Name": "A6 e-tron",
-    "Variant": "S6 Avant e-tron",
+    "Name": "Q6 e-tron",
+    "Variant": "SQ6 e-tron",
+    "IsPublished": true,
+    "EmbargoDate": null,
     "Ignore": null,
-    "CarSegment": "E_Segment",
+    "CarSegment": "C_SUV",
     "PriceSegment": "Premium",
     "Platform": "PPE",
     "EvOnlyPlatform": true,
     "EvOnlyConstruction": true,
-    "BodyType": "StationWagon",
-    "ModelStatus": "Announced",
-    "SpecStatus": null,
-    "WorldPremiere": "2024-07-31",
-    "DeliveryStart": "2024-12-01",
+    "BodyType": "SUV",
+    "ModelStatus": "InProduction",
+    "SpecStatus": "Complete",
+    "WorldPremiere": "2024-03-18",
+    "DeliveryStart": "2024-08-01",
     "Availability": [
       {
         "Region": "Americas",
@@ -37,7 +40,7 @@ Example data
         "CountryList": null,
         "SaleStart": null,
         "DeliveryStart": null,
-        "AvailableStatus": "NotSet"
+        "AvailableStatus": "Available"
       },
       {
         "Region": "Europe",
@@ -45,18 +48,7 @@ Example data
         "CountryList": null,
         "SaleStart": null,
         "DeliveryStart": null,
-        "AvailableStatus": "Announced"
-      },
-      {
-        "Region": "Asia",
-        "SubRegion": "EasternAsia",
-        "CountryList": [
-          "China",
-          "Japan"
-        ],
-        "SaleStart": null,
-        "DeliveryStart": null,
-        "AvailableStatus": "NotSet"
+        "AvailableStatus": "Available"
       },
       {
         "Region": "Oceania",
@@ -64,56 +56,73 @@ Example data
         "CountryList": null,
         "SaleStart": null,
         "DeliveryStart": null,
-        "AvailableStatus": "NotSet"
+        "AvailableStatus": "Announced"
       }
     ],
     "Pricing": [
       {
-        "StartPrice": 0,
-        "Currency": "NOTSET",
-        "Country": "NotSet"
+        "StartPrice": 949900,
+        "Currency": "NOK",
+        "Country": "Norway"
+      },
+      {
+        "StartPrice": 72900,
+        "Currency": "USD",
+        "Country": "UnitedStates"
       }
     ],
     "Alternatives": [
       {
+        "Id": "51bbd154-4968-4412-baf4-f86a68ff1bbb",
+        "Brand": "Mercedes",
+        "Model": "EQE SUV",
+        "Variant": "EQE 53 4MATIC\u002B SUV"
+      },
+      {
+        "Id": "dc137bcb-3b99-47d9-a538-a7429ea8096c",
         "Brand": "BMW",
-        "Model": "i5",
-        "Variant": "i5 M60 xDrive Touring",
-        "Id": "9b4e225d-e0c5-47b6-9fe7-df80e6e5cb54"
+        "Model": "iX",
+        "Variant": "iX M60"
+      },
+      {
+        "Id": "cf6d039f-f4f6-4688-bbf3-8ffcff7dda71",
+        "Brand": "Porsche",
+        "Model": "Macan",
+        "Variant": "Macan 4S"
       }
     ],
     "ReplacedBy": null,
     "Replaces": null
   },
   "Dimensions": {
-    "Length": 4928,
-    "Height": 1527,
-    "WidthExcludingMirrors": 1923,
-    "WidhtIncludingMirrors": 2137,
-    "Wheelbase": 2946,
+    "Length": 4771,
+    "Height": 1685,
+    "WidthExcludingMirrors": 1939,
+    "WidhtIncludingMirrors": 2193,
+    "Wheelbase": 2899,
     "TrackWidthFront": null,
     "TrackWidthRear": null,
-    "DragCoefficient": 0.26,
-    "FrontalArea": 2.48,
-    "OverhangAngleFront": 13.5,
-    "OverhangAngleRear": 16.6,
-    "TurningCircle": 12.3
+    "DragCoefficient": 0.3,
+    "FrontalArea": 2.73,
+    "ApproachAngle": 16.3,
+    "DepartureAngle": 23.7,
+    "TurningCircle": 12.1
   },
   "TransportCapabilities": {
-    "CurbWeight": 2335,
-    "MaxVehicleWeightKg": 2880,
+    "CurbWeight": 2350,
+    "MaxVehicleWeightKg": 2965,
     "Frunk": true,
-    "FrunkSizeLiter": 27,
+    "FrunkSizeLiter": 64,
     "RoofCargo": true,
     "MaxRoofLoadKg": 75,
     "Towbar": {
       "FeatureStatus": "Optional"
     },
-    "TrailerSizeBrakedKg": 2100,
+    "TrailerSizeBrakedKg": 2400,
     "TrailerSizeUnBrakedKg": 750,
     "MaxTowbarDownloadKg": 100,
-    "CargoCapacityLiter": 502,
-    "CargoCapacitySeatDownLiter": 1422,
+    "CargoCapacityLiter": 514,
+    "CargoCapacitySeatDownLiter": 1517,
     "CargoCapacityThirdRowSeatDownLiter": null,
     "BedVolumeLiter": null,
     "BedLength": null,
@@ -123,6 +132,7 @@ Example data
   "Drivetrain": {
     "Battery": [
       {
+        "Id": "b6639b61-5a7c-4ded-ad19-6258e6637c95",
         "Optional": false,
         "Name": "100kWh",
         "GrossCapacitykWh": 100,
@@ -136,7 +146,8 @@ Example data
           "CellProducer": "CATL",
           "CellType": "Prismatic",
           "CellChemistry": "NMC",
-          "CellCapacityAh": "152"
+          "Capacity": 152,
+          "NominalVoltage": null
         },
         "NominalVoltage": 662,
         "BatteryCapacityAh": 152,
@@ -986,17 +997,15 @@ Example data
     "Brakes": [
       {
         "Standard": true,
-        "Name": null,
+        "Name": "Brembo",
         "FrontBrakeType": "FixedCaliperDisc",
         "FrontBrakeDiscType": "CastIron",
-        "FrontBrakeDiscDiameter": 400,
-        "FrontBrakeDiscThickness": 38,
-        "FrontBrakePistons": null,
+        "FrontBrakeDiscDiameter": 375,
+        "FrontBrakePistons": 4,
         "RearBrakeType": "FloatingCaliperDisc",
         "RearBrakeDiscType": "CastIron",
         "RearBrakeDiscDiameter": 350,
-        "RearBrakeDiscThickness": null,
-        "RearBrakePistons": null
+        "RearBrakePistons": 1
       }
     ],
     "DriveSetup": "OneMotorFrontAndRearAxle",
@@ -1006,14 +1015,54 @@ Example data
     "RearWheelSteering": {
       "FeatureStatus": "NotAvailable"
     },
+    "CrabWalk": null,
     "TorqueVectoring": {
       "FeatureStatus": "NotAvailable"
     },
     "Suspension": [
       {
+        "Name": "Sport",
+        "MaxGroundClearanceMM": 164,
+        "MinGroundClearanceMM": 164,
+        "AdaptiveSuspension": {
+          "FeatureStatus": "Standard"
+        },
+        "AdjustableDampingFront": {
+          "FeatureStatus": "Standard"
+        },
+        "AdjustableDampingRear": {
+          "FeatureStatus": "Standard"
+        },
+        "AdjustableHeightFront": {
+          "FeatureStatus": "NotAvailable"
+        },
+        "AdjustableHeightRear": {
+          "FeatureStatus": "NotAvailable"
+        },
+        "EeasyEntry": {
+          "FeatureStatus": "NotAvailable"
+        },
+        "EeasyLoading": {
+          "FeatureStatus": "NotAvailable"
+        },
+        "ActiveBodyControl": {
+          "FeatureStatus": "NotAvailable"
+        },
+        "ActiveCorneringDynamics": {
+          "FeatureStatus": "NotAvailable"
+        },
+        "SpringTypeFront": "Coil",
+        "SpringTypeRear": "Coil",
+        "DamperTypeFront": "ElectronicallyControlled",
+        "DamperTypeRear": "ElectronicallyControlled",
+        "SuspensionTypeFront": "Multilink",
+        "SuspensionTypeRear": "Multilink",
+        "Standard": true
+      },
+      {
         "Name": "Adaptive Air Suspension Sport",
-        "MaxGroundClearanceMM": 145,
-        "MinGroundClearanceMM": 105,
+        "MaxGroundClearanceMM": 224,
+        "MinGroundClearanceMM": 185,
         "AdaptiveSuspension": {
           "FeatureStatus": "Standard"
         },
@@ -1047,19 +1096,19 @@ Example data
         "DamperTypeRear": "ElectronicallyControlled",
         "SuspensionTypeFront": "Multilink",
         "SuspensionTypeRear": "Multilink",
-        "Standard": true
+        "Standard": false
       }
     ],
     "Performance": [
       {
-        "PowerKw": 370,
-        "PowerKwBoost": 405,
+        "PowerKw": 360,
+        "PowerKwBoost": 385,
         "TorqueNm": 855,
         "TorqueNmBoost": 855,
         "BoostLengthSeconds": null,
-        "TopSpeed": 240,
-        "ZeroToHundredKph": 4.1,
-        "ZeroToHundredKphBoost": 3.9
+        "TopSpeed": 230,
+        "ZeroToHundredKph": null,
+        "ZeroToHundredKphBoost": 4.4
       }
     ],
     "Charging": {
@@ -1103,7 +1152,8 @@ Example data
               "ChargePortType": "CCS2"
             }
           ],
-          "V2L": false
+          "V2L": false,
+          "V2H": null
         },
         {
           "IsStandard": true,
@@ -1144,7 +1194,8 @@ Example data
               "ChargePortType": "CCS2"
             }
           ],
-          "V2L": false
+          "V2L": false,
+          "V2H": null
         }
       ],
       "OnBoardChargers": [
@@ -1170,26 +1221,31 @@ Example data
       "V2LPower": null,
       "V2G": {
         "FeatureStatus": "NotAvailable"
-      }
+      },
+      "V2H": {
+        "FeatureStatus": "Unknown"
+      },
+      "V2HType": null,
+      "V2XPorts": null
     },
     "RangeAndConsumption": [
       {
-        "BasicTrimWltpRange": 647,
-        "BasicTrimWltpConsumption": 16.4,
-        "BasicTrimRealWltpConsumption": 14.67,
-        "TopTrimWltpRange": 609,
-        "TopTrimWltpConsumption": 17.4,
-        "TopTrimRealWltpConsumption": 15.58,
-        "BasicTrim120KmhRange": 452,
-        "BasicTrim120KmhConsumption": 21,
-        "BasicTrim90KmhRange": 593,
-        "BasicTrim90KmhConsumption": 16,
-        "BasicTrim70MphRange": 527,
-        "BasicTrim70MphConsumption": 18,
-        "BasicTrimEpaRange": null,
-        "BasicTrimEpaRealConsumption": null,
-        "TopTrimEpaRange": null,
-        "TopTrimEpaRealConsumption": null,
+        "BasicTrimWltpRange": 598,
+        "BasicTrimWltpConsumption": 17.5,
+        "BasicTrimRealWltpConsumption": 15.87,
+        "TopTrimWltpRange": 565,
+        "TopTrimWltpConsumption": 18.4,
+        "TopTrimRealWltpConsumption": 16.80,
+        "BasicTrim120KmhRange": 413,
+        "BasicTrim120KmhConsumption": 23,
+        "BasicTrim90KmhRange": 527,
+        "BasicTrim90KmhConsumption": 18,
+        "BasicTrim70MphRange": 474,
+        "BasicTrim70MphConsumption": 20,
+        "BasicTrimEpaRange": 275,
+        "BasicTrimEpaRealConsumption": 21.4,
+        "TopTrimEpaRange": 275,
+        "TopTrimEpaRealConsumption": 21.4,
         "BasicTrimCLTCRange": null,
         "BasicTrimCLTCRealConsumption": null
       }
@@ -1208,7 +1264,9 @@ Example data
       "BlendedBrakes": true,
       "BlendingBrakeOnLiftUpRegen": true
     },
-    "Transmission": null,
+    "Transmission": {
+      "Gears": 1
+    },
     "SelectableDriveModes": {
       "FeatureStatus": "Standard"
     },
@@ -1245,6 +1303,26 @@ Example data
       },
       {
         "Name": {
+          "en": "Allroad"
+        },
+        "SteeringResponse": "Balanced",
+        "ThrottleResponse": "Balanced",
+        "SuspensionMode": "Comfort",
+        "SuspensionHeight": "High1",
+        "RegenMode": "NotSet"
+      },
+      {
+        "Name": {
+          "en": "Offroad"
+        },
+        "SteeringResponse": "Balanced",
+        "ThrottleResponse": "Balanced",
+        "SuspensionMode": "Balanced",
+        "SuspensionHeight": "Highest",
+        "RegenMode": "NotSet"
+      },
+      {
+        "Name": {
           "en": "Balanced"
         },
         "SteeringResponse": "Balanced",
@@ -1255,7 +1333,7 @@ Example data
       },
       {
         "Name": {
-          "en": "Individual"
+          "en": "Custom"
         },
         "SteeringResponse": "Custom",
         "ThrottleResponse": "Custom",
@@ -1684,7 +1762,7 @@ Example data
       {
         "Color": "Silver",
         "Name": {
-          "en": "Cuvée silver"
+          "en": "Cuv\u00E9e silver"
         },
         "PaintType": "Metallic",
         "ColorId": "X1Y",
@@ -1774,74 +1852,76 @@ Example data
     ],
     "WheelOptions": [
       {
-        "TireDimensionFront": "235/45",
-        "TireDimensionRear": "265/40",
+        "TireDimensionFront": "235/60",
+        "TireDimensionRear": "255/55",
+        "WheelSize": 19,
+        "Name": {
+          "en": "5-double spoke flag"
+        }
+      },
+      {
+        "TireDimensionFront": "235/60",
+        "TireDimensionRear": "255/55",
+        "WheelSize": 19,
+        "Name": {
+          "en": "5-double-spoke dynamic design"
+        }
+      },
+      {
+        "TireDimensionFront": "255/50",
+        "TireDimensionRear": "285/45",
         "WheelSize": 20,
-        "WheelWidth": 0,
         "Name": {
           "en": "10-spoke trapezoidal design"
-        },
-        "WheelOffset": 0
+        }
       },
       {
-        "TireDimensionFront": "235/45",
-        "TireDimensionRear": "265/40",
+        "TireDimensionFront": "255/50",
+        "TireDimensionRear": "285/45",
         "WheelSize": 20,
-        "WheelWidth": 0,
         "Name": {
           "en": "5-double-spoke offset design"
-        },
-        "WheelOffset": 0
+        }
       },
       {
-        "TireDimensionFront": "235/45",
-        "TireDimensionRear": "265/40",
+        "TireDimensionFront": "255/50",
+        "TireDimensionRear": "285/45",
         "WheelSize": 20,
-        "WheelWidth": 0,
         "Name": {
           "en": "5-spoke structural design"
-        },
-        "WheelOffset": 0
+        }
       },
       {
-        "TireDimensionFront": "235/45",
-        "TireDimensionRear": "265/40",
+        "TireDimensionFront": "255/50",
+        "TireDimensionRear": "285/45",
         "WheelSize": 20,
-        "WheelWidth": 0,
         "Name": {
           "en": "5-double spoke Falx"
-        },
-        "WheelOffset": 0
+        }
       },
       {
-        "TireDimensionFront": "245/40",
-        "TireDimensionRear": "275/35",
+        "TireDimensionFront": "255/45",
+        "TireDimensionRear": "285/40",
         "WheelSize": 21,
-        "WheelWidth": 0,
         "Name": {
           "en": "5-arm aero design"
-        },
-        "WheelOffset": 0
+        }
       },
       {
-        "TireDimensionFront": "245/40",
-        "TireDimensionRear": "275/35",
+        "TireDimensionFront": "255/45",
+        "TireDimensionRear": "285/40",
         "WheelSize": 21,
-        "WheelWidth": 0,
         "Name": {
           "en": "5 Y-spoke dynamic design"
-        },
-        "WheelOffset": 0
+        }
       },
       {
-        "TireDimensionFront": "245/40",
-        "TireDimensionRear": "275/35",
+        "TireDimensionFront": "255/45",
+        "TireDimensionRear": "285/40",
         "WheelSize": 21,
-        "WheelWidth": 0,
         "Name": {
           "en": "5-V spoke structure design"
-        },
-        "WheelOffset": 0
+        }
       }
     ],
     "Styling": [
@@ -1860,7 +1940,7 @@ Example data
     ],
     "RoofOptions": [
       {
-        "Material": "steel",
+        "Material": "Steel",
         "PanoramicRoofType": null,
         "PanoramicRoofShadeType": null,
         "Standard": true,
@@ -1870,8 +1950,8 @@ Example data
       },
       {
         "Material": "steel",
-        "PanoramicRoofType": "FullFixed",
-        "PanoramicRoofShadeType": "ElectrochromicMultipleLevels",
+        "PanoramicRoofType": "PartialOpenFront",
+        "PanoramicRoofShadeType": "ElectricCurtain",
         "Standard": false,
         "Rails": {
           "FeatureStatus": "Optional"
@@ -1882,7 +1962,7 @@ Example data
       {
         "Location": "FrontLeft",
         "SoftClose": {
-          "FeatureStatus": "Optional"
+          "FeatureStatus": "NotAvailable"
         },
         "KickSensor": {
           "FeatureStatus": "NotAvailable"
@@ -1891,15 +1971,12 @@ Example data
           "FeatureStatus": "NotAvailable"
         },
         "Type": "Standard",
-        "FramelessWindow": {
-          "FeatureStatus": "NotAvailable"
-        },
         "DoorHandleType": "Pull"
       },
       {
         "Location": "FrontRight",
         "SoftClose": {
-          "FeatureStatus": "Optional"
+          "FeatureStatus": "NotAvailable"
         },
         "KickSensor": {
           "FeatureStatus": "NotAvailable"
@@ -1908,15 +1985,12 @@ Example data
           "FeatureStatus": "NotAvailable"
         },
         "Type": "Standard",
-        "FramelessWindow": {
-          "FeatureStatus": "NotAvailable"
-        },
         "DoorHandleType": "Pull"
       },
       {
         "Location": "RearLeft",
         "SoftClose": {
-          "FeatureStatus": "Optional"
+          "FeatureStatus": "NotAvailable"
         },
         "KickSensor": {
           "FeatureStatus": "NotAvailable"
@@ -1925,15 +1999,12 @@ Example data
           "FeatureStatus": "NotAvailable"
         },
         "Type": "Standard",
-        "FramelessWindow": {
-          "FeatureStatus": "NotAvailable"
-        },
         "DoorHandleType": "Pull"
       },
       {
         "Location": "RearRight",
         "SoftClose": {
-          "FeatureStatus": "Optional"
+          "FeatureStatus": "NotAvailable"
         },
         "KickSensor": {
           "FeatureStatus": "NotAvailable"
@@ -1942,9 +2013,6 @@ Example data
           "FeatureStatus": "NotAvailable"
         },
         "Type": "Standard",
-        "FramelessWindow": {
-          "FeatureStatus": "NotAvailable"
-        },
         "DoorHandleType": "Pull"
       },
       {
@@ -1959,9 +2027,6 @@ Example data
           "FeatureStatus": "Standard"
         },
         "Type": "Liftgate",
-        "FramelessWindow": {
-          "FeatureStatus": "NotAvailable"
-        },
         "DoorHandleType": "Pull"
       }
     ],
@@ -2093,8 +2158,20 @@ Example data
         "FeatureStatus": "Standard"
       }
     },
-    "NightVision": {
-      "FeatureStatus": "NotAvailable"
+    "ElectronicStabilityControl": {
+      "FeatureStatus": "Standard"
+    },
+    "AntiLockBrakingSystem": {
+      "FeatureStatus": "Standard"
+    },
+    "TractionControl": {
+      "FeatureStatus": "Standard"
+    },
+    "AutomaticEmergencyBraking": {
+      "FeatureStatus": "Standard"
+    },
+    "ForwardCollisionWarning": {
+      "FeatureStatus": "Standard"
     },
     "LaneKeeping": {
       "FeatureStatus": "Standard"
@@ -2105,12 +2182,18 @@ Example data
     "DrowsinessAlert": {
       "FeatureStatus": "Standard"
     },
+    "NightVision": {
+      "FeatureStatus": "NotAvailable"
+    },
     "ReversingCamera": {
       "FeatureStatus": "Optional"
     },
     "Camera360": {
       "FeatureStatus": "Optional",
       "OptionId": "PCZ"
+    },
+    "CrossTrafficAssist": {
+      "FeatureStatus": "Standard"
     },
     "RearCrossTrafficAlert": {
       "FeatureStatus": "Optional",
@@ -2141,34 +2224,10 @@ Example data
     "HillStartAssist": {
       "FeatureStatus": "Standard"
     },
-    "AntiLockBrakingSystem": {
-      "FeatureStatus": "Standard"
-    },
-    "AutomaticEmergencyBraking": {
-      "FeatureStatus": "Standard"
-    },
-    "BrakeAssist": {
-      "FeatureStatus": "Standard"
-    },
-    "TractionControl": {
-      "FeatureStatus": "Standard"
-    },
     "LeftTurnCrashAvoidance": {
       "FeatureStatus": "Optional"
     },
-    "ForwardCollisionWarning": {
-      "FeatureStatus": "Standard"
-    },
-    "ElectronicStabilityControl": {
-      "FeatureStatus": "Standard"
-    },
     "TemperatureWarning": {
-      "FeatureStatus": "Standard"
-    },
-    "CrossTrafficAssist": {
-      "FeatureStatus": "Standard"
-    },
-    "SpeedLimiter": {
       "FeatureStatus": "Standard"
     },
     "AutomaticEmergencySteering": {
@@ -2184,7 +2243,7 @@ Example data
       {
         "LevelOfDrivingAutomation": "DriverAssistance",
         "Standard": true,
-        "DrivingAutomatFeatureName": "Standard",
+        "DrivingAutomatFeatureName": "standard",
         "CruiseControl": {
           "FeatureStatus": "Standard",
           "FeatureName": "Cruise Control"
@@ -2272,7 +2331,7 @@ Example data
             ],
             "Rotation": "Horizontal",
             "Touch": false,
-            "Optional": null,
+            "Optional": false,
             "ScreenCategory": "DriverInformation"
           },
           {
@@ -2285,7 +2344,7 @@ Example data
             ],
             "Rotation": "Horizontal",
             "Touch": true,
-            "Optional": null,
+            "Optional": false,
             "ScreenCategory": "Infotainment"
           },
           {
@@ -2302,7 +2361,7 @@ Example data
             "ScreenCategory": "PassengerInfotainment"
           }
         ],
-        "Standard": null,
+        "Standard": true,
         "LayoutName": null
       }
     ],
@@ -2314,8 +2373,10 @@ Example data
         "SteeringWheelDesign": "Circular",
         "ControlType": "NotSet",
         "Name": null,
-        "Standard": null,
-        "Heated": null,
+        "Standard": true,
+        "Heated": {
+          "FeatureStatus": "Optional"
+        },
         "Controls": [
           "Infotainment"
         ]
@@ -2325,10 +2386,6 @@ Example data
       {
         "Standard": true,
         "Type": "Traditional"
-      },
-      {
-        "Standard": false,
-        "Type": "Camera"
       }
     ],
     "InteriorMirror": [
@@ -2351,23 +2408,11 @@ Example data
     "ConsoleDesign": "Traditional",
     "InteriorDesigns": [
       {
-        "Standard": null,
+        "Standard": true,
         "Name": {
-          "en": "standard"
+          "en": "S-Interior"
         },
         "SeatMaterials": [
-          {
-            "Name": "Black fabric",
-            "AnimalFree": null,
-            "Colors": [
-              "Black"
-            ],
-            "MaterialType": "Fabric",
-            "SeatOption": [
-              "Normal",
-              "Sport"
-            ]
-          },
           {
             "Name": "S-line with Leather/Leatherette",
             "AnimalFree": null,
@@ -2402,62 +2447,39 @@ Example data
             "SeatOption": [
               "Sport Plus"
             ]
-          }
-        ],
-        "HeadlinerDesigns": [
+          },
           {
-            "Name": null,
-            "Color": "Gray",
-            "Material": "Fabric"
-          }
-        ]
-      },
-      {
-        "Standard": null,
-        "Name": null,
-        "SeatMaterials": [
-          {
-            "Name": "Beige",
-            "AnimalFree": null,
-            "Colors": [
-              "Beige"
-            ],
-            "MaterialType": "Leather",
-            "SeatOption": [
-              "Sport"
-            ]
-          }
-        ],
-        "HeadlinerDesigns": [
-          {
-            "Name": null,
-            "Color": null,
-            "Material": null
-          }
-        ]
-      },
-      {
-        "Standard": null,
-        "Name": null,
-        "SeatMaterials": [
-          {
-            "Name": "Red",
+            "Name": "Read leather",
             "AnimalFree": null,
             "Colors": [
               "Red"
             ],
-            "MaterialType": "Leather",
+            "MaterialType": "NappaLeather",
             "SeatOption": [
-              "Sport"
+              "Sport Plus"
+            ]
+          },
+          {
+            "Name": "Black leather",
+            "AnimalFree": null,
+            "Colors": [
+              "Black"
+            ],
+            "MaterialType": "NappaLeather",
+            "SeatOption": [
+              "Sport Plus"
             ]
           }
         ],
         "HeadlinerDesigns": [
           {
             "Name": null,
-            "Color": null,
-            "Material": null
+            "Color": "Black",
+            "Material": "Fabric"
           }
+        ],
+        "Colors": [
+          "Black"
         ]
       }
     ],
@@ -2474,7 +2496,7 @@ Example data
         "SeatCategory": "PassengerAndDriver",
         "SeatSplit": null,
         "Skihatch": {
-          "FeatureStatus": "Unknown"
+          "FeatureStatus": "NotRelevant"
         },
         "Seat": [
           {
@@ -2529,7 +2551,7 @@ Example data
         "SeatCategory": "PassengerAndDriver",
         "SeatSplit": null,
         "Skihatch": {
-          "FeatureStatus": "Unknown"
+          "FeatureStatus": "NotAvailable"
         },
         "Seat": [
           {
@@ -2538,14 +2560,14 @@ Example data
             "ReclineAdjustment": "StandardElectric",
             "HeightAdjustment": "StandardElectric",
             "CushionAngleAdjustment": "StandardElectric",
-            "HeightAdjustableHeadrest": "Standard",
+            "HeightAdjustableHeadrest": "NotAvailable",
             "LengthAdjustableHeadrest": "NotAvailable",
             "AdjustableThighSupport": "Standard",
-            "AdjustableSideSupportBack": "Standard",
+            "AdjustableSideSupportBack": "NotAvailable",
             "AdjustableSideSupportBottom": "NotAvailable",
             "LumbarAdjustment": "StandardElectric",
-            "Heating": "Standard",
-            "Ventilation": "Standard",
+            "Heating": "Optional",
+            "Ventilation": "NotAvailable",
             "Massage": "Standard",
             "Memory": "Standard",
             "EasyAccess": "Standard",
@@ -2560,16 +2582,16 @@ Example data
             "ReclineAdjustment": "StandardElectric",
             "HeightAdjustment": "StandardElectric",
             "CushionAngleAdjustment": "StandardElectric",
-            "HeightAdjustableHeadrest": "Standard",
+            "HeightAdjustableHeadrest": "NotAvailable",
             "LengthAdjustableHeadrest": "NotAvailable",
             "AdjustableThighSupport": "Standard",
-            "AdjustableSideSupportBack": "Standard",
+            "AdjustableSideSupportBack": "NotAvailable",
             "AdjustableSideSupportBottom": "NotAvailable",
             "LumbarAdjustment": "StandardElectric",
             "Heating": "Optional",
-            "Ventilation": "Standard",
+            "Ventilation": "NotAvailable",
             "Massage": "Standard",
-            "Memory": "NotAvailable",
+            "Memory": "Standard",
             "EasyAccess": "NotAvailable",
             "Footrest": "NotAvailable",
             "LegSupport": "NotAvailable",
@@ -2586,7 +2608,7 @@ Example data
         "SeatCategory": "ThreeSeatBench",
         "SeatSplit": "40:20:40",
         "Skihatch": {
-          "FeatureStatus": "Unknown"
+          "FeatureStatus": "NotAvailable"
         },
         "Seat": [
           {
@@ -2665,23 +2687,12 @@ Example data
         {
           "Standard": true,
           "Name": {
-            "en": "2-zone"
-          },
-          "Zones": [
-            "LeftFirstRow",
-            "RightFirstRow"
-          ]
-        },
-        {
-          "Standard": false,
-          "Name": {
-            "en": "4-zone"
+            "en": " 3-zone"
           },
           "Zones": [
             "LeftFirstRow",
             "RightFirstRow",
-            "LeftSecondRow",
-            "RightSecondRow"
+            "SecondRow"
           ]
         }
       ],
@@ -2698,7 +2709,66 @@ Example data
         "FeatureStatus": "NotAvailable"
       }
     },
-    "InteriorLights": null
+    "InteriorLights": {
+      "LightSources": [
+        {
+          "Type": "Ambient",
+          "Placement": [
+            "AcrossDashboard",
+            "Footwell",
+            "DoorPanels"
+          ],
+          "ColorType": "MultiColor"
+        }
+      ]
+    },
+    "InteriorStorage": {
+      "Category": "Various",
+      "StorageUnits": [
+        {
+          "Type": "CupHolder",
+          "Location": "FirstRowCenterConsol",
+          "Size": "Medium",
+          "Optional": false
+        },
+        {
+          "Type": "CupHolder",
+          "Location": "FirstRowCenterConsol",
+          "Size": "Medium",
+          "Optional": false
+        },
+        {
+          "Type": "CupHolder",
+          "Location": "SecondRowArmrest",
+          "Size": "Medium",
+          "Optional": false
+        },
+        {
+          "Type": "CupHolder",
+          "Location": "SecondRowArmrest",
+          "Size": "Medium",
+          "Optional": false
+        },
+        {
+          "Type": "GloveCompartment",
+          "Location": "DashPassengerSide",
+          "Size": "Medium",
+          "Optional": false
+        },
+        {
+          "Type": "ConsoleStorage",
+          "Location": "FirstRowCenterConsol",
+          "Size": "Medium",
+          "Optional": false
+        },
+        {
+          "Type": "UnderFloorStorage",
+          "Location": "Trunk",
+          "Size": "Medium",
+          "Optional": false
+        }
+      ]
+    }
   },
   "Infotainment": {
     "InfotainmentOs": "AAOS",
@@ -2711,8 +2781,8 @@ Example data
         "Standard": true
       },
       {
-        "Brand": "Bang & Olufsen",
-        "Name": "Bang & Olufsen Sound System",
+        "Brand": "Bang \u0026 Olufsen",
+        "Name": "Bang \u0026 Olufsen Sound System",
         "NumberOfSpeakers": 20,
         "TotalEffect": 830,
         "Standard": false
@@ -2767,6 +2837,13 @@ Example data
         "Location": "SecondRowCenterConsol",
         "Optional": true
       }
+    ],
+    "InductiveChargers": [
+      {
+        "Location": "FirstRowCenterConsol",
+        "MaxPower": null,
+        "Optional": null
+      }
     ]
   },
   "Comfort": {
@@ -2774,7 +2851,7 @@ Example data
       "FeatureStatus": "Optional"
     },
     "AirFragrance": {
-      "FeatureStatus": "Optional"
+      "FeatureStatus": "NotAvailable"
     },
     "WirelessPhoneCharging": {
       "FeatureStatus": "Standard"
@@ -2797,11 +2874,21 @@ Example data
           "en": "LED"
         },
         "LightTechnology": "LED",
-        "AutoDimming": null,
-        "CorneringLight": null,
-        "SwivelingLight": null,
-        "HeadlightWasher": null,
-        "DRLLightSignatures": null,
+        "AutoDimming": {
+          "FeatureStatus": "Unknown"
+        },
+        "CorneringLight": {
+          "FeatureStatus": "Unknown"
+        },
+        "SwivelingLight": {
+          "FeatureStatus": "NotAvailable"
+        },
+        "HeadlightWasher": {
+          "FeatureStatus": "NotAvailable"
+        },
+        "DRLLightSignatures": {
+          "FeatureStatus": "NotAvailable"
+        },
         "FeatureDescription": null
       },
       {
@@ -2810,11 +2897,15 @@ Example data
           "en": "Matrix"
         },
         "LightTechnology": "LEDMatrix",
-        "AutoDimming": null,
+        "AutoDimming": {
+          "FeatureStatus": "Standard"
+        },
         "CorneringLight": {
           "FeatureStatus": "Standard"
         },
-        "SwivelingLight": null,
+        "SwivelingLight": {
+          "FeatureStatus": "NotAvailable"
+        },
         "HeadlightWasher": {
           "FeatureStatus": "Standard"
         },
@@ -2832,7 +2923,9 @@ Example data
         },
         "FeatureDescription": null,
         "LightTechnology": "LED",
-        "LightSignatures": null
+        "LightSignatures": {
+          "FeatureStatus": "NotAvailable"
+        }
       },
       {
         "Standard": false,
@@ -2854,13 +2947,80 @@ Example data
     "KeylessEntry": {
       "FeatureStatus": "Optional"
     },
-    "PhoneAsKey": null,
-    "AlarmSystem": null
+    "PhoneAsKey": {
+      "FeatureStatus": "Optional"
+    },
+    "AlarmSystem": {
+      "FeatureStatus": "Optional"
+    },
+    "DashCam": {
+      "FeatureStatus": "NotAvailable"
+    },
+    "ParkingSurveillance": {
+      "FeatureStatus": "NotAvailable"
+    }
+  },
+  "Safety": {
+    "Airbags": [
+      {
+        "Type": "Front",
+        "Placement": "SteeringWheel"
+      },
+      {
+        "Type": "Front",
+        "Placement": "InDashFrontOfPassenger"
+      },
+      {
+        "Type": "Curtain",
+        "Placement": "LeftWindows"
+      },
+      {
+        "Type": "Curtain",
+        "Placement": "RightWindows"
+      },
+      {
+        "Type": "Side",
+        "Placement": "SideDriver"
+      },
+      {
+        "Type": "Side",
+        "Placement": "SidePassenger"
+      },
+      {
+        "Type": "Side",
+        "Placement": "LeftSideSecondRow"
+      },
+      {
+        "Type": "Side",
+        "Placement": "RightSideSecondRow"
+      },
+      {
+        "Type": "FrontCenter",
+        "Placement": "BetweenFrontSeats"
+      }
+    ],
+    "FirstRowSeatBeltPretensioner": {
+      "FeatureStatus": "Standard"
+    },
+    "SecondRowSeatBeltPretensioner": {
+      "FeatureStatus": "NotAvailable"
+    },
+    "EuroNcapTest": {
+      "StarRating": 5,
+      "AdultOccupant": 91,
+      "ChildOccupant": 92,
+      "VulnerableRoadUsers": 81,
+      "SafetyAssist": 80,
+      "Version": "2024",
+      "ReportUrl": "https://www.euroncap.com/en/results/audi/q6\u002Be-tron/52560",
+      "YoutubeVideo": "H0mlUigYdfk"
+    }
   },
   "MobileApp": {
     "AppName": "MyAudi",
     "AndroidOs": true,
     "AppleOs": true,
+    "ChargeStatus": true,
     "ChangeChargeTarget": true,
     "Location": true,
     "Preconditioning": true,
@@ -2874,306 +3034,267 @@ Example data
   },
   "Reviews": [
     {
-      "MediaId": "pl3uFEfPKdA",
-      "Url": null,
+      "MediaId": "beJgUTN6OgA",
       "Reviewer": "Out of Spec Reviews",
-      "Title": "Full Tour Of The Audi A6 E-Tron! Huge Range, Fast Charging, Dynamic Lighting, Interior Space, & More",
-      "Published": "2024-07-31T00:00:00",
+      "Title": "My First Look At The Audi Q6 e-tron! Tech Specs, Quick Tour, \u0026 First Drivee",
+      "Published": "2024-01-25T00:00:00",
       "Language": "en",
-      "ReviewPlatform": "YouTube",
-      "EvSummary": null
+      "Url": null,
+      "ReviewPlatform": "YouTube"
     },
     {
-      "MediaId": "8iWD0D5wCEo",
-      "Url": null,
-      "Reviewer": "Autogefühl",
-      "Title": "This is the all-new Audi A6 Sportback & Avant! PREMIERE REVIEW A6 e-tron",
-      "Published": "2024-07-31T00:00:00",
+      "MediaId": "BucVRnrE2qM",
+      "Reviewer": "Autogef\u00FChl",
+      "Title": "Audi Q6 e-tron final REVEAL of the Porsche Macan EV brother",
+      "Published": "2024-03-18T00:00:00",
       "Language": "en",
-      "ReviewPlatform": "YouTube",
-      "EvSummary": null
+      "Url": null,
+      "ReviewPlatform": "YouTube"
+    },
+    {
+      "MediaId": "MW3-wFIAWZA",
+      "Reviewer": "Electrifying",
+      "Title": "New Audi Q6 e-tron FIRST LOOK : time to jump the Q?",
+      "Published": "2024-03-18T00:00:00",
+      "Language": "en",
+      "Url": null,
+      "ReviewPlatform": "YouTube"
+    },
+    {
+      "MediaId": "R-LUZMSDKKU",
+      "Reviewer": "Autogef\u00FChl",
+      "Title": "Audi Q6 e-tron driving REVIEW with SQ6 - better pick than Porsche Macan EV?",
+      "Published": "2024-07-02T00:00:00",
+      "Language": "en",
+      "Url": null,
+      "ReviewPlatform": "YouTube"
+    },
+    {
+      "MediaId": "W0IwfFr1uJA",
+      "Reviewer": "Norsk elbilforening",
+      "Title": "Pr\u00F8vekj\u00F8ring av Audi Q6 og SQ6 e-tron: Leverer p\u00E5 alt nordmenn \u00F8nsker",
+      "Published": "2024-07-02T00:00:00",
+      "Language": "nb",
+      "Url": null,
+      "ReviewPlatform": "YouTube"
+    },
+    {
+      "MediaId": "-isNDCM_ZNc",
+      "Reviewer": "Electrifying",
+      "Title": "FIRST DRIVE: Audi Q6 e-tron: the best electric Audi yet? ",
+      "Published": "2024-07-02T00:00:00",
+      "Language": "en",
+      "Url": null,
+      "ReviewPlatform": "YouTube"
+    },
+    {
+      "MediaId": "dVjg1D6XiRg",
+      "Reviewer": "AutoTrader",
+      "Title": "NEW Audi Q6 / SQ6 E-Tron Review: Is Audi\u0027s Macan Rival Worth \u00A393,000?",
+      "Published": "2024-07-02T00:00:00",
+      "Language": "en",
+      "Url": null,
+      "ReviewPlatform": "YouTube"
+    },
+    {
+      "MediaId": "iVTaZCKL7os",
+      "Reviewer": "It\u0027s Only Electric",
+      "Title": "Audi SQ6 E-Tron - Impressive or Just Average? | Range, Charging, 0-100",
+      "Published": "2025-01-22T15:01:04Z",
+      "Language": "en",
+      "Url": "https://www.youtube.com/watch?v=iVTaZCKL7os",
+      "ReviewPlatform": "YouTube"
     }
   ],
   "Calculations": [
     {
-      "AverageChargingSpeed": 96.63340472707567777623835757,
-      "AverageChargingSpeed10100": 90.86315290786412066743160718,
-      "AverageChargingSpeed1080": 195.79978824926842334989738549,
-      "AverageChargingSpeed1090": 152.89329336937422827273353792,
-      "TravelSpeed120kmh": 104.61267628595993418067677835,
+      "AverageChargingSpeed": 94.59901725913724245463333961,
+      "AverageChargingSpeed10100": 88.95024442559329707443304713,
+      "AverageChargingSpeed1080": 191.67768744402066706884691468,
+      "AverageChargingSpeed1090": 149.67448719317687609857072691,
+      "TravelSpeed120kmh": 103.11832625933332843728298392,
       "TravelSpeed90kmh": null,
-      "TravelSpeedWltp": 44.719704686643656011401871753,
-      "DriveTime1000kmChallenge": 540.547861336667,
-      "AverageSpeed1000kmChallenge": 110.99849669487540366610826803,
-      "EnergyChargedFrom10Percent10minutes": 33.018112311829279578683017733,
-      "EnergyChargedFrom10Percent15Minutes": 48.705411968126248577159825786,
-      "EnergyChargedFrom10Percent20minutes": 62.335764546816951644859498569,
-      "EnergyChargedFrom10Percent25minutes": 70.852712587279280785605008202,
-      "EnergyChargedFrom10Percent30minutes": 74.830290642543134955244892384,
+      "TravelSpeedWltp": 44.549992928973675740072198373,
+      "DriveTime1000kmChallenge": 549.297951961667,
+      "AverageSpeed1000kmChallenge": 109.23033626054212282931533886,
+      "EnergyChargedFrom10Percent10minutes": 33.711445645162612912016350932,
+      "EnergyChargedFrom10Percent15Minutes": 47.700218668037710378763047366,
+      "EnergyChargedFrom10Percent20minutes": 61.257864898788413947579829806,
+      "EnergyChargedFrom10Percent25minutes": 69.261435523508544869734866289,
+      "EnergyChargedFrom10Percent30minutes": 73.316264408301958324215466228,
       "AverageCRating": 1.8713861386138613861386138614,
       "MaxCRating": 2.88
     }
   ],
   "ModelPictures": [
     {
-      "FileName": null,
-      "RepoPath": "models\\audi\\a6_e-tron\\s6_avant_e-tron\\charging_1.jpg",
-      "CloudPath": "models/audi/a6_e-tron/s6_avant_e-tron/charging_1.jpg",
-      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/a6_e-tron/s6_avant_e-tron/charging_1.jpg",
+      "Id": null,
+      "RepoPath": "models\\audi\\q6_e-tron\\sq6_e-tron\\charging_1.jpg",
+      "CloudPath": "models/audi/q6_e-tron/sq6_e-tron/charging_1.jpg",
+      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/q6_e-tron/sq6_e-tron/charging_1.jpg",
+      "Width": 3000,
+      "Height": 2249,
       "HasXSmallThumb": true,
       "HasSmallThumb": true,
       "HasMediumThumb": true,
-      "Tags": null,
-      "Description": null,
-      "Width": 3000,
-      "Height": 2250
+      "Hash": "mQ4kyvCytMlEOQjybYP7cQ==",
+      "Size": 2562024
     },
     {
-      "FileName": null,
-      "RepoPath": "models\\audi\\a6_e-tron\\s6_avant_e-tron\\details_1.jpg",
-      "CloudPath": "models/audi/a6_e-tron/s6_avant_e-tron/details_1.jpg",
-      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/a6_e-tron/s6_avant_e-tron/details_1.jpg",
+      "Id": null,
+      "RepoPath": "models\\audi\\q6_e-tron\\sq6_e-tron\\exterior_1.jpg",
+      "CloudPath": "models/audi/q6_e-tron/sq6_e-tron/exterior_1.jpg",
+      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/q6_e-tron/sq6_e-tron/exterior_1.jpg",
+      "Width": 3000,
+      "Height": 2249,
       "HasXSmallThumb": true,
       "HasSmallThumb": true,
       "HasMediumThumb": true,
-      "Tags": null,
-      "Description": null,
-      "Width": 3000,
-      "Height": 2249
+      "Hash": "OpcIm\u002BssaFE2N6T7FTqeEw==",
+      "Size": 3032134
     },
     {
-      "FileName": null,
-      "RepoPath": "models\\audi\\a6_e-tron\\s6_avant_e-tron\\exterior_1.jpg",
-      "CloudPath": "models/audi/a6_e-tron/s6_avant_e-tron/exterior_1.jpg",
-      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/a6_e-tron/s6_avant_e-tron/exterior_1.jpg",
+      "Id": null,
+      "RepoPath": "models\\audi\\q6_e-tron\\sq6_e-tron\\frontseats_1.jpg",
+      "CloudPath": "models/audi/q6_e-tron/sq6_e-tron/frontseats_1.jpg",
+      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/q6_e-tron/sq6_e-tron/frontseats_1.jpg",
+      "Width": 3000,
+      "Height": 2249,
       "HasXSmallThumb": true,
       "HasSmallThumb": true,
       "HasMediumThumb": true,
-      "Tags": null,
-      "Description": null,
-      "Width": 3000,
-      "Height": 1999
+      "Hash": "AkDVjWnm8ef6ofLvqvogpQ==",
+      "Size": 1963601
     },
     {
-      "FileName": null,
-      "RepoPath": "models\\audi\\a6_e-tron\\s6_avant_e-tron\\exterior_2.jpg",
-      "CloudPath": "models/audi/a6_e-tron/s6_avant_e-tron/exterior_2.jpg",
-      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/a6_e-tron/s6_avant_e-tron/exterior_2.jpg",
+      "Id": null,
+      "RepoPath": "models\\audi\\q6_e-tron\\sq6_e-tron\\frontseats_2.jpg",
+      "CloudPath": "models/audi/q6_e-tron/sq6_e-tron/frontseats_2.jpg",
+      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/q6_e-tron/sq6_e-tron/frontseats_2.jpg",
+      "Width": 3000,
+      "Height": 2249,
       "HasXSmallThumb": true,
       "HasSmallThumb": true,
       "HasMediumThumb": true,
-      "Tags": null,
-      "Description": null,
-      "Width": 3000,
-      "Height": 1999
+      "Hash": "wAmVs6lVn3Uwl1n/PH8bYA==",
+      "Size": 2275833
     },
     {
-      "FileName": null,
-      "RepoPath": "models\\audi\\a6_e-tron\\s6_avant_e-tron\\exterior_3.jpg",
-      "CloudPath": "models/audi/a6_e-tron/s6_avant_e-tron/exterior_3.jpg",
-      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/a6_e-tron/s6_avant_e-tron/exterior_3.jpg",
+      "Id": null,
+      "RepoPath": "models\\audi\\q6_e-tron\\sq6_e-tron\\headlights_1.jpg",
+      "CloudPath": "models/audi/q6_e-tron/sq6_e-tron/headlights_1.jpg",
+      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/q6_e-tron/sq6_e-tron/headlights_1.jpg",
+      "Width": 3000,
+      "Height": 2249,
       "HasXSmallThumb": true,
       "HasSmallThumb": true,
       "HasMediumThumb": true,
-      "Tags": null,
-      "Description": null,
-      "Width": 3000,
-      "Height": 2250
+      "Hash": "Asldx0BRQ56C0Qv1UPG2sQ==",
+      "Size": 1465909
     },
     {
-      "FileName": null,
-      "RepoPath": "models\\audi\\a6_e-tron\\s6_avant_e-tron\\exterior_4.jpg",
-      "CloudPath": "models/audi/a6_e-tron/s6_avant_e-tron/exterior_4.jpg",
-      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/a6_e-tron/s6_avant_e-tron/exterior_4.jpg",
+      "Id": null,
+      "RepoPath": "models\\audi\\q6_e-tron\\sq6_e-tron\\interior_1.jpg",
+      "CloudPath": "models/audi/q6_e-tron/sq6_e-tron/interior_1.jpg",
+      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/q6_e-tron/sq6_e-tron/interior_1.jpg",
+      "Width": 3000,
+      "Height": 2249,
       "HasXSmallThumb": true,
       "HasSmallThumb": true,
       "HasMediumThumb": true,
-      "Tags": null,
-      "Description": null,
-      "Width": 3000,
-      "Height": 2250
+      "Hash": "lWKUUU8Z4eYZudtztPD1Fw==",
+      "Size": 1916716
     },
     {
-      "FileName": null,
-      "RepoPath": "models\\audi\\a6_e-tron\\s6_avant_e-tron\\exterior_5.jpg",
-      "CloudPath": "models/audi/a6_e-tron/s6_avant_e-tron/exterior_5.jpg",
-      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/a6_e-tron/s6_avant_e-tron/exterior_5.jpg",
+      "Id": null,
+      "RepoPath": "models\\audi\\q6_e-tron\\sq6_e-tron\\interior_2.jpg",
+      "CloudPath": "models/audi/q6_e-tron/sq6_e-tron/interior_2.jpg",
+      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/q6_e-tron/sq6_e-tron/interior_2.jpg",
+      "Width": 3000,
+      "Height": 2249,
       "HasXSmallThumb": true,
       "HasSmallThumb": true,
       "HasMediumThumb": true,
-      "Tags": null,
-      "Description": null,
-      "Width": 3000,
-      "Height": 2250
+      "Hash": "7nbm1UYHt9twS65DgQ2yWQ==",
+      "Size": 1762035
     },
     {
-      "FileName": null,
-      "RepoPath": "models\\audi\\a6_e-tron\\s6_avant_e-tron\\exterior_6.jpg",
-      "CloudPath": "models/audi/a6_e-tron/s6_avant_e-tron/exterior_6.jpg",
-      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/a6_e-tron/s6_avant_e-tron/exterior_6.jpg",
+      "Id": null,
+      "RepoPath": "models\\audi\\q6_e-tron\\sq6_e-tron\\main_1.jpg",
+      "CloudPath": "models/audi/q6_e-tron/sq6_e-tron/main_1.jpg",
+      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/q6_e-tron/sq6_e-tron/main_1.jpg",
+      "Width": 3000,
+      "Height": 1999,
       "HasXSmallThumb": true,
       "HasSmallThumb": true,
       "HasMediumThumb": true,
-      "Tags": null,
-      "Description": null,
-      "Width": 3000,
-      "Height": 2250
+      "Hash": "BSSJk7RU\u002BjEt4tjD/XHaHA==",
+      "Size": 1455484
     },
     {
-      "FileName": null,
-      "RepoPath": "models\\audi\\a6_e-tron\\s6_avant_e-tron\\exterior_7.jpg",
-      "CloudPath": "models/audi/a6_e-tron/s6_avant_e-tron/exterior_7.jpg",
-      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/a6_e-tron/s6_avant_e-tron/exterior_7.jpg",
+      "Id": null,
+      "RepoPath": "models\\audi\\q6_e-tron\\sq6_e-tron\\screens_1.jpg",
+      "CloudPath": "models/audi/q6_e-tron/sq6_e-tron/screens_1.jpg",
+      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/q6_e-tron/sq6_e-tron/screens_1.jpg",
+      "Width": 3000,
+      "Height": 2249,
       "HasXSmallThumb": true,
       "HasSmallThumb": true,
       "HasMediumThumb": true,
-      "Tags": null,
-      "Description": null,
-      "Width": 3000,
-      "Height": 2250
+      "Hash": "5U3/KPetNAU\u002BiHNotylZMg==",
+      "Size": 1738228
     },
     {
-      "FileName": null,
-      "RepoPath": "models\\audi\\a6_e-tron\\s6_avant_e-tron\\frontseats_1.jpg",
-      "CloudPath": "models/audi/a6_e-tron/s6_avant_e-tron/frontseats_1.jpg",
-      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/a6_e-tron/s6_avant_e-tron/frontseats_1.jpg",
+      "Id": null,
+      "RepoPath": "models\\audi\\q6_e-tron\\sq6_e-tron\\secondrowseats_1.jpg",
+      "CloudPath": "models/audi/q6_e-tron/sq6_e-tron/secondrowseats_1.jpg",
+      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/q6_e-tron/sq6_e-tron/secondrowseats_1.jpg",
+      "Width": 3000,
+      "Height": 2249,
       "HasXSmallThumb": true,
       "HasSmallThumb": true,
       "HasMediumThumb": true,
-      "Tags": null,
-      "Description": null,
-      "Width": 3000,
-      "Height": 2249
+      "Hash": "4Q4yzt3Hn\u002BeXxGowHW7rPg==",
+      "Size": 1758246
     },
     {
-      "FileName": null,
-      "RepoPath": "models\\audi\\a6_e-tron\\s6_avant_e-tron\\frontseats_2.jpg",
-      "CloudPath": "models/audi/a6_e-tron/s6_avant_e-tron/frontseats_2.jpg",
-      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/a6_e-tron/s6_avant_e-tron/frontseats_2.jpg",
+      "Id": null,
+      "RepoPath": "models\\audi\\q6_e-tron\\sq6_e-tron\\secondrowseats_2.jpg",
+      "CloudPath": "models/audi/q6_e-tron/sq6_e-tron/secondrowseats_2.jpg",
+      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/q6_e-tron/sq6_e-tron/secondrowseats_2.jpg",
+      "Width": 3000,
+      "Height": 2249,
       "HasXSmallThumb": true,
       "HasSmallThumb": true,
       "HasMediumThumb": true,
-      "Tags": null,
-      "Description": null,
-      "Width": 3000,
-      "Height": 2250
+      "Hash": "LWv50ly4O2CwsdrqiBYEAw==",
+      "Size": 1755717
     },
     {
-      "FileName": null,
-      "RepoPath": "models\\audi\\a6_e-tron\\s6_avant_e-tron\\frunk_1.jpg",
-      "CloudPath": "models/audi/a6_e-tron/s6_avant_e-tron/frunk_1.jpg",
-      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/a6_e-tron/s6_avant_e-tron/frunk_1.jpg",
+      "Id": null,
+      "RepoPath": "models\\audi\\q6_e-tron\\sq6_e-tron\\trunk_1.jpg",
+      "CloudPath": "models/audi/q6_e-tron/sq6_e-tron/trunk_1.jpg",
+      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/q6_e-tron/sq6_e-tron/trunk_1.jpg",
+      "Width": 3000,
+      "Height": 2249,
       "HasXSmallThumb": true,
       "HasSmallThumb": true,
       "HasMediumThumb": true,
-      "Tags": null,
-      "Description": null,
-      "Width": 3000,
-      "Height": 2249
+      "Hash": "SJcXn5FY1OjiPC9nldAIcA==",
+      "Size": 1988816
     },
     {
-      "FileName": null,
-      "RepoPath": "models\\audi\\a6_e-tron\\s6_avant_e-tron\\headlights_1.jpg",
-      "CloudPath": "models/audi/a6_e-tron/s6_avant_e-tron/headlights_1.jpg",
-      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/a6_e-tron/s6_avant_e-tron/headlights_1.jpg",
+      "Id": null,
+      "RepoPath": "models\\audi\\q6_e-tron\\sq6_e-tron\\wheels_1.jpg",
+      "CloudPath": "models/audi/q6_e-tron/sq6_e-tron/wheels_1.jpg",
+      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/q6_e-tron/sq6_e-tron/wheels_1.jpg",
+      "Width": 3000,
+      "Height": 2249,
       "HasXSmallThumb": true,
       "HasSmallThumb": true,
       "HasMediumThumb": true,
-      "Tags": null,
-      "Description": null,
-      "Width": 3000,
-      "Height": 1999
-    },
-    {
-      "FileName": null,
-      "RepoPath": "models\\audi\\a6_e-tron\\s6_avant_e-tron\\interior_1.jpg",
-      "CloudPath": "models/audi/a6_e-tron/s6_avant_e-tron/interior_1.jpg",
-      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/a6_e-tron/s6_avant_e-tron/interior_1.jpg",
-      "HasXSmallThumb": true,
-      "HasSmallThumb": true,
-      "HasMediumThumb": true,
-      "Tags": null,
-      "Description": null,
-      "Width": 3000,
-      "Height": 2249
-    },
-    {
-      "FileName": null,
-      "RepoPath": "models\\audi\\a6_e-tron\\s6_avant_e-tron\\interior_2.jpg",
-      "CloudPath": "models/audi/a6_e-tron/s6_avant_e-tron/interior_2.jpg",
-      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/a6_e-tron/s6_avant_e-tron/interior_2.jpg",
-      "HasXSmallThumb": true,
-      "HasSmallThumb": true,
-      "HasMediumThumb": true,
-      "Tags": null,
-      "Description": null,
-      "Width": 3000,
-      "Height": 2249
-    },
-    {
-      "FileName": null,
-      "RepoPath": "models\\audi\\a6_e-tron\\s6_avant_e-tron\\main_1.jpg",
-      "CloudPath": "models/audi/a6_e-tron/s6_avant_e-tron/main_1.jpg",
-      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/a6_e-tron/s6_avant_e-tron/main_1.jpg",
-      "HasXSmallThumb": true,
-      "HasSmallThumb": true,
-      "HasMediumThumb": true,
-      "Tags": null,
-      "Description": null,
-      "Width": 3000,
-      "Height": 1999
-    },
-    {
-      "FileName": null,
-      "RepoPath": "models\\audi\\a6_e-tron\\s6_avant_e-tron\\rearlights_1.jpg",
-      "CloudPath": "models/audi/a6_e-tron/s6_avant_e-tron/rearlights_1.jpg",
-      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/a6_e-tron/s6_avant_e-tron/rearlights_1.jpg",
-      "HasXSmallThumb": true,
-      "HasSmallThumb": true,
-      "HasMediumThumb": true,
-      "Tags": null,
-      "Description": null,
-      "Width": 3000,
-      "Height": 2249
-    },
-    {
-      "FileName": null,
-      "RepoPath": "models\\audi\\a6_e-tron\\s6_avant_e-tron\\screens_1.jpg",
-      "CloudPath": "models/audi/a6_e-tron/s6_avant_e-tron/screens_1.jpg",
-      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/a6_e-tron/s6_avant_e-tron/screens_1.jpg",
-      "HasXSmallThumb": true,
-      "HasSmallThumb": true,
-      "HasMediumThumb": true,
-      "Tags": null,
-      "Description": null,
-      "Width": 3000,
-      "Height": 2249
-    },
-    {
-      "FileName": null,
-      "RepoPath": "models\\audi\\a6_e-tron\\s6_avant_e-tron\\screens_2.jpg",
-      "CloudPath": "models/audi/a6_e-tron/s6_avant_e-tron/screens_2.jpg",
-      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/a6_e-tron/s6_avant_e-tron/screens_2.jpg",
-      "HasXSmallThumb": true,
-      "HasSmallThumb": true,
-      "HasMediumThumb": true,
-      "Tags": null,
-      "Description": null,
-      "Width": 3000,
-      "Height": 2250
-    },
-    {
-      "FileName": null,
-      "RepoPath": "models\\audi\\a6_e-tron\\s6_avant_e-tron\\trunk_1.jpg",
-      "CloudPath": "models/audi/a6_e-tron/s6_avant_e-tron/trunk_1.jpg",
-      "ExternalUrl": "https://media.evkx.net/multimedia/models/audi/a6_e-tron/s6_avant_e-tron/trunk_1.jpg",
-      "HasXSmallThumb": true,
-      "HasSmallThumb": true,
-      "HasMediumThumb": true,
-      "Tags": null,
-      "Description": null,
-      "Width": 3000,
-      "Height": 2249
+      "Hash": "HvN4zHVXpw\u002BtH2r6AFNgMg==",
+      "Size": 2049428
     }
   ]
 }
