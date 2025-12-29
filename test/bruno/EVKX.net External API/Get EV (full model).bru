@@ -1,0 +1,20 @@
+meta {
+  name: Get EV (full model)
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{host}}/api/external/v1/ev/{{evid}}
+  body: none
+  auth: none
+}
+
+headers {
+  Accept: application/json
+  Content-Type: application/json
+}
+
+vars:pre-request {
+  evid: 80822ada-ddf9-4f9c-8165-010e4695cba1
+}
