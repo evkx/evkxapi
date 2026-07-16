@@ -8,6 +8,10 @@ EVKX registers your public key (as a JWK) with your client id and scopes. To get
 bearer token you sign a short-lived assertion with your private key and exchange it
 at the token endpoint. **Your private key never leaves your machine.**
 
+New partner? Follow the step-by-step [ONBOARDING guide](../../ONBOARDING.md) first —
+it covers picking a client id, identifying which scopes to request (each endpoint
+lists its scope in Swagger), and what to include in the registration mail.
+
 ## Requirements
 
 Any [.NET SDK](https://dotnet.microsoft.com/download) 8.0 or newer. The tool has no
@@ -27,8 +31,9 @@ This creates two files:
 | `your-company.key` | RSA-2048 private key (PEM) | **Keep secret.** Store like any credential. EVKX never needs it. |
 | `your-company.jwk.json` | Public key (JWK) | Send to **api@evkx.net** together with your desired client id. |
 
-The tool refuses to overwrite existing key files. Use the client id agreed with EVKX
-(letters, digits, `-`, `_`, `.`).
+The tool refuses to overwrite existing key files. The client id is embedded in the
+key material (`kid`), so pick your proposed id **before** generating — you propose
+it, EVKX confirms it during registration (letters, digits, `-`, `_`, `.`).
 
 ## 2. Get a bearer token
 

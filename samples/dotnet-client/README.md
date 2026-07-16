@@ -15,8 +15,9 @@ library the assertion/exchange steps shrink to a few lines.
 
 ## Prerequisites
 
-- A client id + private key registered with EVKX. Generate the pair with
-  [`tools/keygen`](../../tools/keygen/) and send the public JWK to **api@evkx.net**.
+- A client id + private key registered with EVKX — see the
+  [ONBOARDING guide](../../ONBOARDING.md) for the full flow (client id, key
+  generation, scope selection, registration mail).
 - Any [.NET SDK](https://dotnet.microsoft.com/download) 8.0+.
 
 ## Run

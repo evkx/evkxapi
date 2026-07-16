@@ -17,9 +17,13 @@ key, EVKX registers your public key (JWK) with your client id and scopes, and yo
 exchange short-lived signed assertions for bearer tokens at
 `POST /api/external/v1/auth/token`.
 
-Use [`tools/keygen`](tools/keygen/) to generate your key pair and assertions —
-your private key never leaves your machine; you only share the public JWK with
-api@evkx.net. See the [keygen README](tools/keygen/README.md) for the full flow.
+**Start here: [ONBOARDING.md](ONBOARDING.md)** — the full path from picking a
+client id, generating keys and identifying scopes (each endpoint lists its
+required scope in Swagger) to registration via api@evkx.net and your first
+authorized call, including troubleshooting.
 
-A complete runnable client (assertion → token → authorized API calls, with token
-caching) lives in [`samples/dotnet-client`](samples/dotnet-client/).
+Tooling:
+- [`tools/keygen`](tools/keygen/) — generate your key pair and token assertions;
+  your private key never leaves your machine, you only share the public JWK.
+- [`samples/dotnet-client`](samples/dotnet-client/) — complete runnable client
+  (assertion → token → authorized API calls, with token caching).
