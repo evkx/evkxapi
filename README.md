@@ -20,3 +20,6 @@ exchange short-lived signed assertions for bearer tokens at
 Use [`tools/keygen`](tools/keygen/) to generate your key pair and assertions —
 your private key never leaves your machine; you only share the public JWK with
 api@evkx.net. See the [keygen README](tools/keygen/README.md) for the full flow.
+
+A complete runnable client (assertion → token → authorized API calls, with token
+caching) lives in [`samples/dotnet-client`](samples/dotnet-client/).
