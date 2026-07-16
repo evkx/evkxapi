@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <!-- LTS target so the tool runs on any commonly-installed .NET SDK.
+         No NuGet dependencies: everything uses the BCL, so a plain
+         `dotnet run` works offline without a package restore. -->
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>EvkxKeyGen</RootNamespace>
+    <AssemblyName>evkx-keygen</AssemblyName>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+</Project>
